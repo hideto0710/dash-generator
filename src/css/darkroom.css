@@ -73,9 +73,6 @@
 
 .darkroom-canvas {
   display: block;
-  background: white;
-  padding: 12px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16), 0 3px 10px rgba(0, 0, 0, 0.23);
   border-radius: 2px;
   width: 100%;
   height: 100%;
@@ -93,26 +90,6 @@
   border-radius: 3px;
   font-size: 20px;
   line-height: 1; }
-  .darkroom menu:before, .darkroom menu:after {
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border: solid rgba(255, 255, 255, 0); }
-  .darkroom menu:before {
-    border-color: rgba(255, 255, 255, 0);
-    border-width: 10px;
-    bottom: -20px;
-    left: 1em;
-    margin-left: -10px; }
-  .darkroom menu:after {
-    border-color: rgba(255, 255, 255, 0);
-    border-width: 9px;
-    bottom: -18px;
-    border-top-color: #444;
-    left: 1em;
-    margin-left: -9px; }
   .darkroom menu ul {
     list-style-type: none;
     padding: 0;
