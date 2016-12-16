@@ -18,11 +18,13 @@ class App extends Component {
       image: '',
       crop: false,
       save: false,
+      text: '',
     };
     this.handleChangeFile = this.handleChangeFile.bind(this);
     this.onCropConfirm = this.onCropConfirm.bind(this);
     this.onCropStart = this.onCropStart.bind(this);
     this.onSave = this.onSave.bind(this);
+    this.onChangeText = this.onChangeText.bind(this);
   }
 
   handleChangeFile(e) {
@@ -54,6 +56,10 @@ class App extends Component {
 
   onCropStart() {
     this.setState({ crop: true })
+  }
+
+  onChangeText(e) {
+    this.setState({ text: e.target.value })
   }
 
   render() {
@@ -93,7 +99,14 @@ class App extends Component {
               <FilePicker hasFile={hasFile} onChange={this.handleChangeFile}/>
             </Canvas>
           </Darkroom>
-          <img src={dash_btn_left} className="image_dash" alt="logo" width="972" height="586" />
+          {this.state.save  && <img src={dash_btn_left} className="image_dash" alt="logo" width="972" height="586" />}
+          <div className="input_area">
+            <h1>
+              写真を選んで、名前を入力してください。
+            </h1>
+            <input type="text" className="input_name" value={this.state.text} onChange={this.onChangeText} />
+          </div>
+          <span className="output_name">{this.state.text}</span>
         </div>
       </div>
     );
