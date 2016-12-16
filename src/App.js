@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import dash_btn_left from './img/dash_btn_left.png';
 import './App.css';
 import './css/darkroom.css'
