@@ -23,6 +23,7 @@ class App extends Component {
     this.onCropConfirm = this.onCropConfirm.bind(this);
     this.onCropStart = this.onCropStart.bind(this);
     this.onSave = this.onSave.bind(this);
+    this.onCancel = this.onCancel.bind(this);
     this.onChangeText = this.onChangeText.bind(this);
   }
 
